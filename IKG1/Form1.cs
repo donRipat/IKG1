@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace IKG1
 {
@@ -15,6 +16,23 @@ namespace IKG1
         public Form1()
         {
             InitializeComponent();
+        }
+        
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            Point a = new Point(100, 100);
+            Point b = new Point(200, 200);
+            Pen p = new Pen(Color.Red, 3);
+            g.DrawLine(p, a, b);
+        }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            this.Hide();
+            form2.ShowDialog();
+            this.Close();
         }
     }
 }

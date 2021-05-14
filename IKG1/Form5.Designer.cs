@@ -1,6 +1,6 @@
 ﻿namespace IKG1
 {
-    partial class Form1
+    partial class Form5
     {
         /// <summary>
         /// Required designer variable.
@@ -40,18 +40,17 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "next>>>";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "Form5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "1. Отрезок";
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
+            this.Text = "Form5";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form5_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -62,4 +61,3 @@
         private System.Windows.Forms.Button button1;
     }
 }
-
