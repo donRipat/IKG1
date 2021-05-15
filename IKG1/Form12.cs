@@ -44,7 +44,10 @@ namespace IKG1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form13 f = new Form13();
+            this.Hide();
+            f.ShowDialog();
+            this.Close();
         }
     }
 }
