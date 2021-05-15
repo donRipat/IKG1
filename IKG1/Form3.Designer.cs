@@ -51,6 +51,7 @@
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "3. Кривая Безье";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form3_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();

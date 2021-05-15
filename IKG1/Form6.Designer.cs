@@ -1,6 +1,6 @@
 ﻿namespace IKG1
 {
-    partial class Form2
+    partial class Form6
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,7 @@
             // button1
             // 
             this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(713, 415);
+            this.button1.Location = new System.Drawing.Point(713, 411);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 27);
             this.button1.TabIndex = 0;
@@ -42,17 +42,17 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form2
+            // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Name = "Form2";
+            this.Name = "Form6";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "2. Эллипс";
-            this.Load += new System.EventHandler(this.Form2_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form2_Paint);
+            this.Text = "6. Диаграмма";
+            this.Load += new System.EventHandler(this.Form6_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form6_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
 

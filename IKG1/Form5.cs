@@ -23,7 +23,6 @@ namespace IKG1
         {
             mypb.Width = 300;
             mypb.Height = 300;
-            this.Controls.Add(mypb);
             Graphics g = mypb.CreateGraphics();
             Brush myBrush = new SolidBrush(Color.Blue);
             PointF a = new PointF(0, 0),
@@ -31,6 +30,19 @@ namespace IKG1
             float start = 0;
             float end = 120;
             g.FillPie(myBrush, a.X, a.Y, b.X, b.Y, start, end);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+            this.Hide();
+            form6.ShowDialog();
+            this.Close();
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+            this.Controls.Add(mypb);
         }
     }
 }

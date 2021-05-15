@@ -51,6 +51,7 @@
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "4. Кривые Безье";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form4_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();

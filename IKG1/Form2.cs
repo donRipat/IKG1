@@ -19,20 +19,14 @@ namespace IKG1
 
         PictureBox mypb = new PictureBox();
 
-        private void MyPictureBox_Paint(Object sender, PaintEventArgs e)
+        private void Form2_Paint(object sender, PaintEventArgs e)
         {
             mypb.Height = 300;
             mypb.Width = 300;
-            this.Controls.Add(mypb);
             Graphics g = mypb.CreateGraphics();
             Rectangle myBox = new Rectangle(5, 10, 150, 200);
             Pen myPen = new Pen(Color.Blue, 2);
             g.DrawEllipse(myPen, myBox);
-        }
-
-        private void Form2_Paint(object sender, PaintEventArgs e)
-        {
-            MyPictureBox_Paint(sender, e);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,6 +35,11 @@ namespace IKG1
             this.Hide();
             form3.ShowDialog();
             this.Close();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            this.Controls.Add(mypb);
         }
     }
 }

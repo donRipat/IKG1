@@ -23,7 +23,6 @@ namespace IKG1
         {
             mypb.Width = 300;
             mypb.Height = 300;
-            this.Controls.Add(mypb);
             Point[] points = new Point[] {
                 new Point(10,100),
                 new Point(75,10),
@@ -45,6 +44,11 @@ namespace IKG1
             this.Hide();
             form5.ShowDialog();
             this.Close();
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            this.Controls.Add(mypb);
         }
     }
 }

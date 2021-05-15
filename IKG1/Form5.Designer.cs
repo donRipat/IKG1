@@ -40,6 +40,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "next>>>";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form5
             // 
@@ -49,7 +50,8 @@
             this.Controls.Add(this.button1);
             this.Name = "Form5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form5";
+            this.Text = "5. Закраска сектора эллипса";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form5_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();

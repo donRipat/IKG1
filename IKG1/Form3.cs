@@ -31,7 +31,6 @@ namespace IKG1
         {
             mypb.Width = 300;
             mypb.Height = 300;
-            this.Controls.Add(mypb);
             Point s1 = new Point(10, 100);
             Point e1 = new Point(100, 10);
             Point e2 = new Point(150, 150);
@@ -40,6 +39,11 @@ namespace IKG1
             g.Clear(Color.White);
             Pen myPen = new Pen(Color.Black, 3);
             g.DrawBezier(myPen, s1, e1, e2, s2);
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            this.Controls.Add(mypb);
         }
     }
 }
