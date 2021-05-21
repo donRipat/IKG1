@@ -49,7 +49,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form12";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form12";
+            this.Text = "Установка фокуса градиентной кисти";
             this.Load += new System.EventHandler(this.Form12_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form12_Paint);
             this.ResumeLayout(false);

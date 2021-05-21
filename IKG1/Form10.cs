@@ -35,7 +35,8 @@ namespace IKG1
             Pen MyPen = new Pen(Color.Red, 2);
             GraphicsPath path = new GraphicsPath();
             path.AddEllipse(MyRectangle);
-            PathGradientBrush pthGrBrush = new PathGradientBrush(path);
+            PathGradientBrush pthGrBrush = new 
+                PathGradientBrush(path);
             pthGrBrush.CenterColor = Color.FromArgb(255, 255, 0, 0);
             g.DrawEllipse(MyPen, MyRectangle);
             g.FillPath(pthGrBrush, path);

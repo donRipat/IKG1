@@ -1,6 +1,6 @@
 ﻿namespace IKG1
 {
-    partial class Form16
+    partial class Form17
     {
         /// <summary>
         /// Required designer variable.
@@ -35,36 +35,36 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Location = new System.Drawing.Point(725, 0);
+            this.button1.Location = new System.Drawing.Point(982, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 450);
+            this.button1.Size = new System.Drawing.Size(75, 678);
             this.button1.TabIndex = 0;
-            this.button1.Text = "next>>>";
+            this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // hScrollBar1
             // 
-            this.hScrollBar1.LargeChange = 1;
-            this.hScrollBar1.Location = new System.Drawing.Point(9, 416);
-            this.hScrollBar1.Maximum = 360;
+            this.hScrollBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.hScrollBar1.Location = new System.Drawing.Point(0, 653);
+            this.hScrollBar1.Maximum = 350;
             this.hScrollBar1.Name = "hScrollBar1";
-            this.hScrollBar1.Size = new System.Drawing.Size(713, 25);
+            this.hScrollBar1.Size = new System.Drawing.Size(982, 25);
             this.hScrollBar1.TabIndex = 1;
             this.hScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar1_Scroll);
             // 
-            // Form16
+            // Form17
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1057, 678);
             this.Controls.Add(this.hScrollBar1);
             this.Controls.Add(this.button1);
-            this.Name = "Form16";
+            this.Name = "Form17";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Вращение кривой Безье.";
-            this.Load += new System.EventHandler(this.Form16_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form16_Paint);
+            this.Text = "Масштабирование фотографии";
+            this.Load += new System.EventHandler(this.Form17_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form17_Paint);
             this.ResumeLayout(false);
 
         }

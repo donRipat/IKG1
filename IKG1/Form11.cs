@@ -49,7 +49,8 @@ namespace IKG1
                 new PointF(0, 60),
                 new PointF(0, 30)
             };
-            PathGradientBrush myBrush = new PathGradientBrush(myPoints);
+            PathGradientBrush myBrush = new 
+                PathGradientBrush(myPoints);
             Color[] colors =
             {
                 Color.FromArgb(255, 255, 0, 0),
